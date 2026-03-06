@@ -121,21 +121,23 @@ export default function Footer() {
 
             {/* ── LEGAL MODALS ─────────────────────────────────────── */}
 
-            <LegalModal open={modal === "impressum"} onClose={() => setModal(null)} title="Impressum">
-                <p><strong>Angaben gemäß § 5 TMG:</strong></p>
-                <p>{l.companyName}<br />{l.street}<br />{l.zip} {l.city}<br />{l.country}</p>
-                <p><strong>Vertreten durch:</strong><br />Geschäftsführer: {l.managingDirector}</p>
-                <p><strong>Kontakt:</strong><br />Telefon: {l.phone}<br />E-Mail: {l.email}</p>
-                <p><strong>Registereintrag:</strong><br />Eintragung im Handelsregister.<br />Registergericht: {l.registerCourt}<br />Registernummer: {l.registerNumber}</p>
-                <p><strong>Umsatzsteuer-ID:</strong><br />Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />{l.vatId}</p>
-                <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />{l.responsibleContent}<br />{l.street}<br />{l.zip} {l.city}</p>
+            <LegalModal open={modal === "impressum"} onClose={() => setModal(null)} title="Impressum - Rechtliche Angaben">
+                <p><strong>Angaben gemäß § 5 DDG</strong><br />{l.companyName}<br />{l.street}<br />{l.zip} {l.city}</p>
+                <p><strong>Vertreten durch</strong><br />{l.managingDirector}</p>
+                <p><strong>Kontakt</strong><br />Telefon: {l.phone}<br />E-Mail: {l.email}</p>
+                <p><strong>DUNS-Nummer</strong><br />34-024-8055</p>
+                <p><strong>Registereintrag</strong><br />Eintragung im Handelsregister.<br />Registergericht: {l.registerCourt}<br />Registernummer: {l.registerNumber}</p>
+                <p><strong>Umsatzsteuer-ID</strong><br />Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />{l.vatId}</p>
+                <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong><br />{l.responsibleContent}<br />{l.street}<br />{l.zip} {l.city}</p>
+                <p><strong>Streitschlichtung</strong><br />Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             </LegalModal>
 
             <LegalModal open={modal === "datenschutz"} onClose={() => setModal(null)} title="Datenschutzerklärung">
                 <p><strong>1. Datenschutz auf einen Blick</strong></p>
-                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
-                <p><strong>2. Datenerfassung auf dieser Website</strong></p>
-                <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber: {l.companyName}, {l.street}, {l.zip} {l.city}. Telefon: {l.phone}, E-Mail: {l.email}.</p>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Ihre Privatsphäre ist uns wichtig.</p>
+                <p><strong>2. Allgemeine Hinweise und Pflichtinformationen</strong></p>
+                <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+                <p><strong>Verantwortliche Stelle:</strong><br />{l.companyName}, {l.street}, {l.zip} {l.city}. E-Mail: {l.email}</p>
                 <p><strong>3. Fragebogen-Daten</strong></p>
                 <p>Wenn Sie unseren KI-Readiness Check ausfüllen, werden Ihre Angaben auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) verarbeitet. Die Daten werden ausschließlich zur Berechnung Ihres KI-Reifegrad-Scores und zur optionalen Kontaktaufnahme verwendet.</p>
                 <p><strong>4. E-Mail-Kommunikation</strong></p>
@@ -143,7 +145,7 @@ export default function Footer() {
                 <p><strong>5. Hosting</strong></p>
                 <p>Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA gehostet. Details zur Datenverarbeitung finden Sie in der Datenschutzerklärung von Vercel: https://vercel.com/legal/privacy-policy.</p>
                 <p><strong>6. Ihre Rechte</strong></p>
-                <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Richten Sie Ihre Anfrage an: {l.email}.</p>
+                <p>Sie haben jederzeit das Recht auf Auskunft über Ihre bei uns gespeicherten Daten zu erhalten, diese berichtigen oder löschen zu lassen, die Verarbeitung einzuschränken, der Verarbeitung zu widersprechen oder Ihre Daten in einem gängigen Format zu erhalten (Datenportabilität). Richten Sie Ihre Anfrage an: {l.email}.</p>
             </LegalModal>
 
             <LegalModal open={modal === "agb"} onClose={() => setModal(null)} title="Allgemeine Geschäftsbedingungen">
