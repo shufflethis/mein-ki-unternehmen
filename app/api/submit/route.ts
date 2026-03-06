@@ -176,7 +176,7 @@ export async function POST(req: NextRequest) {
       </table>
       ${score?.savingsPotential ? `<div style="background:linear-gradient(135deg,#DDEBD3,#DEEBF7);padding:20px;border-radius:12px;text-align:center;margin-bottom:24px;"><p style="font-size:13px;color:#555;margin:0 0 4px;">Geschätztes Einsparpotenzial</p><p style="font-size:24px;font-weight:700;color:#0D0D0D;margin:0;">${savingsEuro}</p></div>` : ""}
       <div style="text-align:center;">
-        <a href="https://calendly.com/trackbytrack/ki-beratung" style="display:inline-block;padding:14px 28px;background:#bbd8a7;color:#0D0D0D;font-weight:600;text-decoration:none;border-radius:12px;font-size:14px;">Kostenloses Beratungsgespräch buchen</a>
+        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu" style="display:inline-block;padding:14px 28px;background:#bbd8a7;color:#0D0D0D;font-weight:600;text-decoration:none;border-radius:12px;font-size:14px;">Kostenloses Beratungsgespräch buchen</a>
       </div>
     </div>
     <div style="text-align:center;padding:16px;font-size:11px;color:#999;border-radius:0 0 16px 16px;">

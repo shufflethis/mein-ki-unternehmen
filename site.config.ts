@@ -67,6 +67,6 @@ export const siteConfig = {
   },
   cta: {
     primary: "Jetzt KI-Readiness prüfen",
-    calendly: "https://calendly.com/trackbytrack/ki-beratung",
+    calendly: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu",
   },
 };
